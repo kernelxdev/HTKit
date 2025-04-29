@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "69VipsuEtYSOxZhoqhcYtRE2+E17KGo+gFJOHl7DGmNIPqvTvAlN7oWhLTtG7F9MadnaBRBs6x5tllTfFDHwIg==",
+  "success": true,
+  "projectFilePath": "/home/kernel/Code/HTKit/HTKit.csproj",
+  "expectedPackageFiles": [
+    "/home/kernel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
