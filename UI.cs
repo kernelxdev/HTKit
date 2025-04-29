@@ -2,14 +2,9 @@ namespace HTKit;
 
 public class UI
 {
-	// 0 Main menu | 1 In function | 2 Settings
-	private int currentMenuState;
-
 	public void PrintUI()
 	{
 		// TODO: Add cool ASCII art.
-
-		currentMenuState = 0;
 		
 		Console.Clear();
 
@@ -30,7 +25,6 @@ public class UI
 		try
 		{
 			return int.Parse(Console.ReadLine());
-			currentMenuState = 1;
 		}
 		catch (Exception e)
 		{

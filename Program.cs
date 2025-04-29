@@ -5,6 +5,7 @@ internal class Program
 	private static void Main(string[] args)
 	{
 		UI ui = new UI();
+		Tools tools = new Tools();
 
 		bool enabled = true;
 		
@@ -15,8 +16,8 @@ internal class Program
 			switch (ui.SelectOption())
 			{
 				case 1:
-					Console.WriteLine("Super dos tool :o");
-
+					tools.DosAttack();
+					
 					Console.WriteLine("Press any key to continue...");
 					Console.ReadKey();
 					break;
