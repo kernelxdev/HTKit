@@ -25,10 +25,10 @@ internal class Program
 				default:
 					Console.WriteLine("Selection option 1-8!");
 					break;
-				case 8:
+				case 0:
 					enabled = false;
 					break;
-				case 0:
+				case 69:
 					Console.WriteLine("Encountered an error!");
 					enabled = false;
 					break;

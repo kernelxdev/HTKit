@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace HTKit;
 
 public class Tools
@@ -35,5 +37,10 @@ public class Tools
 	public void OpenLinutil()
 	{
 		
+	}
+
+	public bool CheckIsUnix()
+	{
+		return !RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 	}
 }
