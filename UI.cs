@@ -4,16 +4,16 @@ public class UI
 {
 	Tools tools = new Tools();
 	
-	string menu = "1. DoS attack.\n" +
-	              "2. Port probe. TODO\n" +
-	              "3. GeoLocation lookup. TODO\n" +
-	              "4. Quick VPN connection. TODO\n" +
-	              "5. GZip compression. TODO\n" +
-	              "6. Open app in a container. TODO\n";
-	
 	public void PrintUI()
 	{
 		// TODO: Add cool ASCII art.
+		
+		string menu = "1. DoS attack.\n" +
+		              "2. Port probe. TODO\n" +
+		              "3. GeoLocation lookup. TODO\n" +
+		              "4. Quick VPN connection. TODO\n" +
+		              "5. GZip compression. TODO\n" +
+		              "6. Open app in a container. TODO\n";
 		
 		Console.Clear();
 		Console.WriteLine("Hacker Toolkit");

