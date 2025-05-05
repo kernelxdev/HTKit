@@ -13,10 +13,10 @@ internal class Program
 		{
 			ui.PrintUI();
 
-			switch (ui.SelectOption())
+			switch (ui.SelectOption(false, ""))
 			{
 				case 1:
-					tools.DosAttack();
+					tools.DosAttack(ui);
 					
 					Console.WriteLine("Press any key to continue...");
 					Console.ReadKey();
